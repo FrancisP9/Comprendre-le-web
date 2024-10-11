@@ -184,4 +184,133 @@
                         <p>Le piratage est l'accès non autorisé à un système informatique, souvent pour voler ou corrompre des données.</p>
                     </div>
                     <div class="method method-grabbing">
-                        <i class="fas fa-key"><
+                        <i class="fas fa-key"></i>
+                        <h3>Grabbing</h3>
+                        <p>Une technique consistant à capturer des identifiants de connexion ou des informations confidentielles en interceptant des données.</p>
+                    </div>
+                </div>
+                <p class="hacking-description">À l'ère numérique, la sécurité informatique est cruciale. Les cyberattaques, comme le phishing, le grabbing, ou les virus, sont en constante augmentation. Connaître ces menaces permet de mieux se protéger.</p>
+            </div>
+        </article>
+        
+        <article id="technologies" class="section tech-section">
+            <div class="tech-container">
+                <h2 class="tech-title">Technologies : NoSQL, Node.js, Markup, AJAX</h2>
+                <div class="tech-methods">
+                    <div class="tech-box tech-nosql">
+                        <i class="fas fa-database"></i>
+                        <h3>NoSQL</h3>
+                        <p>NoSQL est une approche des bases de données non relationnelles, conçue pour stocker et gérer de grands volumes de données non structurées ou semi-structurées.</p>
+                    </div>
+                    <div class="tech-box tech-nodejs">
+                        <i class="fab fa-node"></i>
+                        <h3>Node.js</h3>
+                        <p>Node.js est une plateforme JavaScript côté serveur, permettant de créer des applications réseau rapides, évolutives et non bloquantes.</p>
+                    </div>
+                    <div class="tech-box tech-markup">
+                        <i class="fas fa-code"></i>
+                        <h3>Markup</h3>
+                        <p>Le langage de balisage (Markup) désigne les langages comme HTML ou XML qui sont utilisés pour structurer et organiser des contenus textuels.</p>
+                    </div>
+                    <div class="tech-box tech-ajax">
+                        <i class="fas fa-sync"></i>
+                        <h3>AJAX</h3>
+                        <p>AJAX (Asynchronous JavaScript and XML) permet d'actualiser les pages Web de façon asynchrone sans les recharger complètement.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+                
+        <article id="metiers-web" class="section careers-section">
+            <div class="careers-container">
+                <h2 class="careers-title">Métiers du Web</h2>
+                <div class="careers-overview">
+                    <div class="career-box career-dev">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Développeur Web</h3>
+                        <p>Le développeur web conçoit et crée des sites et applications web interactifs en utilisant des langages comme HTML, CSS, et JavaScript.</p>
+                    </div>
+                    <div class="career-box career-designer">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <h3>Designer UX/UI</h3>
+                        <p>Le designer UX/UI s'assure que l'interface d'un site web est intuitive et centrée sur l'utilisateur, tout en étant esthétiquement agréable.</p>
+                    </div>
+                    <div class="career-box career-seo">
+                        <i class="fas fa-search"></i>
+                        <h3>Expert SEO</h3>
+                        <p>L'expert SEO optimise les sites web pour les moteurs de recherche afin d'améliorer la visibilité et le classement dans les résultats de recherche.</p>
+                    </div>
+                    <div class="career-box career-analyst">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Analyste en Sécurité</h3>
+                        <p>L'analyste en sécurité protège les systèmes d'information contre les cyberattaques. Il analyse les vulnérabilités, met en place des solutions de sécurité et surveille les incidents.</p>
+                    </div>
+                </div>
+                <div class="analyst-details">
+                    <h3>Focus : Le Métier d'Analyste en Sécurité</h3>
+                    <p>Un analyste en sécurité informatique est chargé de protéger les systèmes d'une organisation contre les cybermenaces. Son travail inclut l'identification des failles de sécurité, la mise en place de mesures de protection, la surveillance des réseaux, et la réponse aux incidents de sécurité.</p>
+                    <p>Compétences requises :</p>
+                    <ul>
+                        <li>Connaissances approfondies des menaces numériques (malware, phishing, etc.)</li>
+                        <li>Maîtrise des outils de surveillance et de détection d'intrusion</li>
+                        <li>Gestion des incidents de sécurité</li>
+                        <li>Capacité à élaborer des stratégies de sécurité</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        
+        <article id="conclusion" class="section conclusion-section">
+            <div class="conclusion-container">
+                <h2 class="conclusion-title">Conclusion</h2>
+                <p class="conclusion-text">Le web continue d’évoluer rapidement, avec de nouvelles technologies, des métiers en expansion, et des menaces à surveiller. Une bonne compréhension de ses principes fondamentaux est cruciale pour naviguer en toute sécurité et exploiter son plein potentiel.</p>
+                <div class="conclusion-message">
+                    <p><strong>Maîtrisez le web.</strong></p>
+                    <p><strong>Protégez vos données.</strong></p>
+                    <p><strong>Explorez l'avenir.</strong></p>
+                </div>
+            </div>
+        </article>
+        
+    </main>
+
+    <script src="script.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js'></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.section');
+
+            const options = {
+                threshold: 0.3 // 30% de la section doit être visible pour déclencher l'animation
+            };
+
+            const observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible'); // Ajouter la classe visible lorsque la section est visible
+                        observer.unobserve(entry.target); // Désactiver l'observateur une fois l'animation jouée
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
