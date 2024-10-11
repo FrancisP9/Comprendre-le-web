@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez l'évolution du Web, la structure des URL, la réservation de domaines, les normes W3C et la sécurité informatique.">
+    <title>Comprendre le Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Navigation principale">
+            <ul class="nav-links">
+                <li><a href="#introduction" aria-current="page"><i class="fas fa-book-open" aria-hidden="true"></i> Introduction</a></li>
+                <li><a href="#evolution-services"><i class="fas fa-chart-line" aria-hidden="true"></i> Évolution</a></li>
+                <li><a href="#url-structure"><i class="fas fa-link" aria-hidden="true"></i> URL</a></li>
+                <li><a href="#reservation-domaine"><i class="fas fa-globe" aria-hidden="true"></i> Réservation</a></li>
+                <li><a href="#normes-w3c"><i class="fas fa-code" aria-hidden="true"></i> Normes W3C</a></li>
+                <li><a href="#securite-piratage"><i class="fas fa-shield-alt" aria-hidden="true"></i> Sécurité</a></li>
+                <li><a href="#technologies"><i class="fas fa-cogs" aria-hidden="true"></i> Technologies</a></li> <!-- Nouvelle section -->
+                <li><a href="#metiers-web"><i class="fas fa-user-tie" aria-hidden="true"></i> Métiers</a></li> <!-- Nouvelle section -->
+                <li><a href="#conclusion"><i class="fas fa-check" aria-hidden="true"></i> Conclusion</a></li>
+            </ul>
+        </nav>
+    
+        <div id="matrix-section">
+            <canvas id="matrix" aria-hidden="true"></canvas>
+            <div class="matrix-content">
+                <a href="#introduction" class="neon">Comprendre le Web</a>
+            </div>
+        </div>
+    </header>
+    
+
+    <main>
+        <article id="introduction" class="section">
+            <div class="intro-bg">
+                <img src="image2.webp" alt="Illustration du Web moderne" class="intro-image">
+                <div class="intro-content">
+                    <h1 class="intro-title">Introduction</h1>
+                    <p class="intro-text">Le Web, cette vaste infrastructure numérique, a transformé notre manière de communiquer, de faire des affaires, et de consommer l'information. À travers les innovations constantes et l'expansion rapide des services en ligne, le Web a ouvert un monde de possibilités sans limites.</p>
+                    <p class="intro-text">Découvrez comment cette révolution digitale continue de remodeler notre société et ce que cela signifie pour notre avenir connecté.</p>
+                    <a href="#evolution-services" class="intro-button">Explorer plus</a>
+                </div>
+            </div>
+        </article>    
+    
+        <article id="evolution-services" class="section evolution-section">
+            <div class="evolution-container">
+                <h2 class="evolution-title">L'Évolution du Web</h2>
+        
+                <!-- Ligne du temps de l'évolution du web -->
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>1989 - La création du World Wide Web</h3>
+                            <p>Le Web a été inventé en 1989 par Tim Berners-Lee au CERN. Il proposait un système de partage d'informations basé sur l'hypertexte, permettant de naviguer entre des documents reliés entre eux.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>1991 - Première page Web en ligne</h3>
+                            <p>En 1991, la première page web est mise en ligne. C’était une simple page informative sur le projet World Wide Web.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>1993 - Premier navigateur graphique</h3>
+                            <p>Mosaic, le premier navigateur graphique, voit le jour en 1993, rendant la navigation web plus visuelle et accessible au grand public.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>2000s - L’avènement du Web 2.0</h3>
+                            <p>Le début des années 2000 marque l’ère du Web 2.0, centré sur l'interaction des utilisateurs, la création de contenus dynamiques et les réseaux sociaux.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>2010s - Web mobile et applications</h3>
+                            <p>Avec l’essor des smartphones, le web devient plus mobile, avec des applications et des sites optimisés pour les appareils mobiles.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3>2020s - L'ère du Web 3.0</h3>
+                            <p>Le Web 3.0 marque une nouvelle évolution avec la décentralisation, les technologies blockchain, et l’intelligence artificielle pour rendre le web plus intelligent et sécurisé.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Web 1.0, Web 2.0, Web 3.0 avec des images -->
+                <div class="web-versions">
+                    <div class="web-version">
+                        <img src="web1.jpg" alt="Web 1.0" class="web-image">
+                        <h3>Web 1.0</h3>
+                        <p>Le Web 1.0, souvent appelé le "Web statique", est apparu dans les années 1990. Il était principalement composé de pages HTML statiques où les utilisateurs consommaient l'information sans interagir directement.</p>
+                    </div>
+                    <div class="web-version">
+                        <img src="web2.jpg" alt="Web 2.0" class="web-image">
+                        <h3>Web 2.0</h3>
+                        <p>Le Web 2.0, apparu dans les années 2000, a transformé le web en un espace interactif. Les utilisateurs pouvaient publier, commenter et interagir via des plateformes comme les réseaux sociaux et les blogs.</p>
+                    </div>
+                    <div class="web-version">
+                        <img src="web3.jpg" alt="Web 3.0" class="web-image">
+                        <h3>Web 3.0</h3>
+                        <p>Le Web 3.0 est la prochaine génération d'internet, intégrant des technologies telles que la blockchain, la décentralisation des données et l’intelligence artificielle pour créer un web plus sécurisé et personnalisé.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+         
+    
+        <article id="url-structure" class="section">
+            <h2>La Notion d'URL : Structure et Principe de Redirection</h2>
+            <div class="url-container">
+                <div class="url-path">
+                    <span class="url-segment">https://</span>
+                    <span class="url-segment neon-green">www</span>.
+                    <span class="url-segment neon-yellow">example</span>.
+                    <span class="url-segment neon-blue">com</span>/
+                    <span class="url-segment neon-red">path</span>/
+                    <span class="url-segment neon-purple">to</span>/
+                    <span class="url-segment neon-orange">resource</span>
+                </div>
+                <p class="url-description">Une URL est plus qu'une simple adresse. Elle permet aux utilisateurs de naviguer à travers l'immense océan d'informations disponibles sur le Web.</p>
+            </div>
+        </article>
+
+        <article id="reservation-domaine" class="section">
+            <h2>Le Processus de Réservation des Noms de Domaine</h2>
+            <div class="domain-container">
+                <div class="domain-network">
+                    <div class="domain-node">.com</div>
+                    <div class="domain-node">.net</div>
+                    <div class="domain-node">.org</div>
+                    <div class="domain-node">.io</div>
+                    <div class="domain-node">.tech</div>
+                    <div class="domain-node">.dev</div>
+                    <div class="domain-node">.ai</div>
+                </div>
+                <p class="domain-description">Le nom de domaine est votre adresse unique sur le Web. Réserver un nom de domaine garantit une identité numérique pour vos projets.</p>
+                <a href="#" class="domain-button">Réserver un Domaine</a>
+            </div>
+        </article>
+
+        <article id="normes-w3c" class="section w3c-section">
+            <div class="w3c-container">
+                <h2 class="w3c-title">Normes du W3C : Garantir l'Interopérabilité du Web</h2>
+                <div class="w3c-content">
+                    <div class="w3c-terminal">
+                        <div class="terminal-line">_ Normes W3C en cours...</div>
+                        <div class="terminal-line">_ Accessibilité : Aider tout utilisateur à accéder au Web</div>
+                        <div class="terminal-line">_ Compatibilité : Assurer que le contenu fonctionne sur tous les navigateurs</div>
+                        <div class="terminal-line">_ Sécurité : Garantir des communications Web sécurisées</div>
+                        <div class="terminal-line">_ HTML, CSS, JavaScript : Fondations essentielles des normes du Web</div>
+                        <div class="terminal-line">_ Bonne pratique : Conformité avec les standards mondiaux</div>
+                    </div>
+                    <p class="w3c-description">Les normes W3C sont la pierre angulaire du développement web moderne. Elles assurent l’interopérabilité entre les navigateurs et plateformes, garantissant un web ouvert et accessible à tous. Les développeurs doivent respecter ces standards pour créer des expériences cohérentes, sécurisées et inclusives.</p>
+                </div>
+            </div>
+        </article>
+        
+        <article id="securite-piratage" class="section hacking-section">
+            <div class="hacking-container">
+                <h2 class="hacking-title">Sécurité Informatique : Virus, Phishing et Hacking</h2>
+                <div class="hacking-methods">
+                    <div class="method method-virus">
+                        <i class="fas fa-bug"></i>
+                        <h3>Virus</h3>
+                        <p>Un logiciel malveillant qui se propage d'un fichier à un autre pour endommager un système ou voler des données personnelles.</p>
+                    </div>
+                    <div class="method method-phishing">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h3>Phishing</h3>
+                        <p>Une méthode d'escroquerie qui consiste à tromper les utilisateurs pour qu'ils divulguent des informations sensibles via de faux e-mails ou sites web.</p>
+                    </div>
+                    <div class="method method-hacking">
+                        <i class="fas fa-user-secret"></i>
+                        <h3>Hacking</h3>
+                        <p>Le piratage est l'accès non autorisé à un système informatique, souvent pour voler ou corrompre des données.</p>
+                    </div>
+                    <div class="method method-grabbing">
+                        <i class="fas fa-key"></i>
+                        <h3>Grabbing</h3>
+                        <p>Une technique consistant à capturer des identifiants de connexion ou des informations confidentielles en interceptant des données.</p>
+                    </div>
+                </div>
+                <p class="hacking-description">À l'ère numérique, la sécurité informatique est cruciale. Les cyberattaques, comme le phishing, le grabbing, ou les virus, sont en constante augmentation. Connaître ces menaces permet de mieux se protéger.</p>
+            </div>
+        </article>
+        
+        <article id="technologies" class="section tech-section">
+            <div class="tech-container">
+                <h2 class="tech-title">Technologies : NoSQL, Node.js, Markup, AJAX</h2>
+                <div class="tech-methods">
+                    <div class="tech-box tech-nosql">
+                        <i class="fas fa-database"></i>
+                        <h3>NoSQL</h3>
+                        <p>NoSQL est une approche des bases de données non relationnelles, conçue pour stocker et gérer de grands volumes de données non structurées ou semi-structurées.</p>
+                    </div>
+                    <div class="tech-box tech-nodejs">
+                        <i class="fab fa-node"></i>
+                        <h3>Node.js</h3>
+                        <p>Node.js est une plateforme JavaScript côté serveur, permettant de créer des applications réseau rapides, évolutives et non bloquantes.</p>
+                    </div>
+                    <div class="tech-box tech-markup">
+                        <i class="fas fa-code"></i>
+                        <h3>Markup</h3>
+                        <p>Le langage de balisage (Markup) désigne les langages comme HTML ou XML qui sont utilisés pour structurer et organiser des contenus textuels.</p>
+                    </div>
+                    <div class="tech-box tech-ajax">
+                        <i class="fas fa-sync"></i>
+                        <h3>AJAX</h3>
+                        <p>AJAX (Asynchronous JavaScript and XML) permet d'actualiser les pages Web de façon asynchrone sans les recharger complètement.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+                
+        <article id="metiers-web" class="section careers-section">
+            <div class="careers-container">
+                <h2 class="careers-title">Métiers du Web</h2>
+                <div class="careers-overview">
+                    <div class="career-box career-dev">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Développeur Web</h3>
+                        <p>Le développeur web conçoit et crée des sites et applications web interactifs en utilisant des langages comme HTML, CSS, et JavaScript.</p>
+                    </div>
+                    <div class="career-box career-designer">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <h3>Designer UX/UI</h3>
+                        <p>Le designer UX/UI s'assure que l'interface d'un site web est intuitive et centrée sur l'utilisateur, tout en étant esthétiquement agréable.</p>
+                    </div>
+                    <div class="career-box career-seo">
+                        <i class="fas fa-search"></i>
+                        <h3>Expert SEO</h3>
+                        <p>L'expert SEO optimise les sites web pour les moteurs de recherche afin d'améliorer la visibilité et le classement dans les résultats de recherche.</p>
+                    </div>
+                    <div class="career-box career-analyst">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Analyste en Sécurité</h3>
+                        <p>L'analyste en sécurité protège les systèmes d'information contre les cyberattaques. Il analyse les vulnérabilités, met en place des solutions de sécurité et surveille les incidents.</p>
+                    </div>
+                </div>
+                <div class="analyst-details">
+                    <h3>Focus : Le Métier d'Analyste en Sécurité</h3>
+                    <p>Un analyste en sécurité informatique est chargé de protéger les systèmes d'une organisation contre les cybermenaces. Son travail inclut l'identification des failles de sécurité, la mise en place de mesures de protection, la surveillance des réseaux, et la réponse aux incidents de sécurité.</p>
+                    <p>Compétences requises :</p>
+                    <ul>
+                        <li>Connaissances approfondies des menaces numériques (malware, phishing, etc.)</li>
+                        <li>Maîtrise des outils de surveillance et de détection d'intrusion</li>
+                        <li>Gestion des incidents de sécurité</li>
+                        <li>Capacité à élaborer des stratégies de sécurité</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        
+        <article id="conclusion" class="section conclusion-section">
+            <div class="conclusion-container">
+                <h2 class="conclusion-title">Conclusion</h2>
+                <p class="conclusion-text">Le web continue d’évoluer rapidement, avec de nouvelles technologies, des métiers en expansion, et des menaces à surveiller. Une bonne compréhension de ses principes fondamentaux est cruciale pour naviguer en toute sécurité et exploiter son plein potentiel.</p>
+                <div class="conclusion-message">
+                    <p><strong>Maîtrisez le web.</strong></p>
+                    <p><strong>Protégez vos données.</strong></p>
+                    <p><strong>Explorez l'avenir.</strong></p>
+                </div>
+            </div>
+        </article>
+        
+    </main>
+
+    <script src="script.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js'></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.section');
+
+            const options = {
+                threshold: 0.3 // 30% de la section doit être visible pour déclencher l'animation
+            };
+
+            const observer = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible'); // Ajouter la classe visible lorsque la section est visible
+                        observer.unobserve(entry.target); // Désactiver l'observateur une fois l'animation jouée
+                    }
+                });
+            }, options);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
