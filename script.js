@@ -38,4 +38,35 @@ document.addEventListener('DOMContentLoaded', function() {
   drawMatrix();
 
   // Sélectionner toutes les sections, les items de la timeline et les versions du Web
-  const sections = document.querySelectorAll
+  const sections = document.querySelectorAll('.section');
+  const timelineItems = document.querySelectorAll('.timeline-item');
+  const webVersions = document.querySelectorAll('.web-version');
+
+  const options = {
+      threshold: 0.1 // 10% de la section doit être visible pour déclencher l'animation
+  };
+
+  // Créer un observateur d'intersection
+  const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible'); // Ajouter la classe visible lorsque l'élément entre dans le viewport
+          } else {
+              entry.target.classList.remove('visible'); // Retirer la classe visible lorsque l'élément sort du viewport
+          }
+      });
+  }, options);
+
+  // Observer les sections, items de la timeline et versions du Web
+  sections.forEach(section => {
+      observer.observe(section);
+  });
+  
+  timelineItems.forEach(item => {
+      observer.observe(item);
+  });
+
+  webVersions.forEach(version => {
+      observer.observe(version);
+  });
+});
